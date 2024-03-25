@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 17px;
+}
+.content {
+  text-align: center;
+}
+.content h1 {
+  font-size: 100px;
+  color: aliceblue;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  transition: 0.5s;
+}
+.content h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.second h1 {
+  padding-top: 60px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  color: darkblue;
+}
+
+.second form {
+  text-align: center;
+}
+
+.second textarea {
+  height: 50px;
+  width: 300px;
+  padding: 20px; /* Add padding around the textarea */
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 8px; /* Rounded corners */
+  font-family: Arial, sans-serif; /* Set the font family */
+  font-size: 16px; /* Set the font size */
+  resize: none; /* Disable textarea resizing */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition for border color */
+}
+
+textarea:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #66afe9; /* Change border color on focus */
+}
+
+input[type="submit"] {
+  background-color: #007bff; /* Set button background color */
+  color: white; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Add cursor pointer on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+.third {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: absolute;
+  padding: 10 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
