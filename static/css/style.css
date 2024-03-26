@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #00284f;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  color: #007bff;
+  margin-bottom: 30px;
+  font-size: 100px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.sentiment-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.sentiment-form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  resize: none;
+}
+
+.sentiment-form textarea:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+.sentiment-form button {
+  border-radius: 40px;
+  width: 50%;
+}
+.predict {
+  text-align: center;
+  padding-top: 10px;
+  height: 40vh;
+}
+.detail {
+  text-align: center;
+}
+
+.collapse {
+  text-align: center;
+  padding: 20px;
+  height: 70vh;
+}

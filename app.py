@@ -84,13 +84,19 @@ def process_text():
     print(clean)
     tokenized_sentence = clean.split()
     print(tokenized_sentence)
-    stopWordRemove = stop_word_remove(tokenized_sentence)
-    print(stopWordRemove)
+    stop_word_removed = stop_word_remove(tokenized_sentence)
+    print(stop_word_removed)
+    tfidf = TFIDFVectorizer()
+    tfidf.fit_transform(stop_word_removed)
+    tfidf_word = tfidf.transform(stop_word_removed)
+    print(tfidf_word)
     
     return render_template('index.html',received_text=text, 
                            cleaned_text=clean, 
                            tokenized_sentence=tokenized_sentence,
-                           stop_word_removed=stopWordRemove)
+                           stop_word_removed=stop_word_removed,
+                           dummy_variable = "Sulav")
+
  
 
 
