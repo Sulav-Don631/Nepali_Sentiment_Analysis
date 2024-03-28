@@ -4,6 +4,7 @@ import pickle
 import math
 from collections import Counter
 import numpy as np
+from final_code import TFIDFVectorizer
 
 app = Flask(__name__)
 
@@ -94,8 +95,7 @@ def process_text():
     return render_template('index.html',received_text=text, 
                            cleaned_text=clean, 
                            tokenized_sentence=tokenized_sentence,
-                           stop_word_removed=stop_word_removed,
-                           dummy_variable = "Sulav")
+                           stop_word_removed=stop_word_removed)
 
  
 

@@ -1,0 +1,131 @@
+body {
+  background-color: black;
+  font-family: Poppins, sans-serif;
+}
+.main {
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero {
+  height: 1600px;
+  overflow: hidden;
+  width: 100vw;
+}
+.back {
+  background: url(https://cdn-www.dora.run/__dora__/morpheus/static/images/ai/bg-first.webp)
+    no-repeat center;
+  background-size: 100% 100%;
+  min-width: 1440px;
+  width: 100vw;
+  height: 1020px;
+}
+.radial {
+  transform: rotate(180deg);
+  z-index: 4;
+  flex-shrink: 0;
+  border-radius: 100%;
+  opacity: 0.4;
+  mix-blend-mode: luminosity;
+  rotate: 180deg;
+  background: radial-gradient(
+    60.42% 60.42% at 50.02% 60.42%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 69.42%,
+    rgba(255, 255, 255, 0.08) 75.33%,
+    rgba(255, 255, 255, 0.13) 80.42%,
+    rgba(255, 255, 255, 0.31) 86.39%,
+    rgba(255, 255, 255, 0.57) 92.19%,
+    #fff 100%
+  );
+  box-shadow: 0px -20px 40px 0px rgba(255, 255, 255, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 290;
+  left: -50;
+}
+.content {
+  height: 1440px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  display: flex;
+  color: #fff;
+  top: 200;
+  left: -50;
+  position: absolute;
+  font-size: 50;
+}
+.textbox {
+  align-items: center;
+  width: 30%;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.2);
+  top: -600px;
+  left: 450px;
+  position: relative;
+  z-index: 8;
+}
+.input {
+  align-items: center;
+  justify-content: center;
+}
+
+.input .box {
+  border: none;
+  background: none;
+  outline: none;
+  padding-left: 70px;
+  padding-top: 25;
+  margin: 5;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #fff;
+  width: 244px;
+}
+button {
+  z-index: 20;
+  border-radius: 56px;
+  width: 113px;
+  height: 41px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: hsla(0, 0%, 100%, 0.2);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  position: relative;
+}
+.predict {
+  height: 1440px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  display: flex;
+  color: #fff;
+  top: 600;
+  position: absolute;
+  font-size: 50;
+  left: -50;
+}
+.star {
+  position: absolute;
+  top: 20px;
+}
+.star2 {
+  position: absolute;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  left: 0;
+  top: 150px;
+}

@@ -199,7 +199,7 @@ def predict_sentiment(sentence):
     return predicted_label[0]  # Return the predicted sentiment label
 
 # Example usage:
-sentence = "म नराम्रो केटा हुँ।"
-predicted_sentiment = predict_sentiment(sentence)
-print("Predicted Sentiment Label:", predicted_sentiment)
+# sentence = "म नराम्रो केटा हुँ।"
+# predicted_sentiment = predict_sentiment(sentence)
+# print("Predicted Sentiment Label:", predicted_sentiment)
 
